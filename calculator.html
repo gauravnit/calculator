@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>The Web Calculator</title>
+		<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+		<link rel="icon" href="image/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css"  href="css/style1.css">
+		<script src="/jquery-3.4.1.min.js"></script>
+		<script src="js/cal.js"></script>
+	</head>
+	<body>
+		<form name ="calculator">
+		<table class="td">
+			<div class="screen">
+				<input type ="text" name="display" class="question" autocomplete="off">
+				<input type ="text" name="display1" disabled class="result" id="display1">
+			</div>
+			<tr>
+				<td class="td"><input type="button" value="/" class="button1" onclick="displayValue(value)"></td>
+				<td class="td"><input type="button" value="(" class="button1" onclick="displayValue(value)"></td>
+				<td class="td"><input type="button" value=")" class="button1" onclick="displayValue(value)"></td>
+				<td class="td"><input type="button" value="÷" class="button1" onclick="displayValue(value)"></td>
+			</tr>
+			<tr>
+				<td class="td"><input type="button" value="7" class="button"  onclick="displayValue(value)"></td>
+				<td class="td"><input type="button" value="8" class="button"  onclick="displayValue(value)"></td>
+				<td class="td"><input type="button" value="9" class="button"  onclick="displayValue(value)"></td>
+				<td class="td"><input type="button" value="x" class="button1" onclick="displayValue(value)"></td>
+			</tr>
+			<tr>
+				<td class="td"><input type="button" value="4" class="button"  onclick="displayValue(value)"></td>
+				<td class="td"><input type="button" value="5" class="button"  onclick="displayValue(value)"></td>
+				<td class="td"><input type="button" value="6" class="button"  onclick="displayValue(value)"></td>
+				<td class="td"><input type="button" value="-" class="button1" onclick="displayValue(value)"></td>
+			</tr>
+			<tr>
+				<td class="td"><input type="button" value="1" class="button"  onclick="displayValue(value)"></td>
+				<td class="td"><input type="button" value="2" class="button"  onclick="displayValue(value)"></td>
+				<td class="td"><input type="button" value="3" class="button"  onclick="displayValue(value)"></td>
+				<td class="td"><input type="button" value="+" class="button1" onclick="displayValue(value)"></td>
+			</tr>
+			<tr>
+				<td class="td"><input type="button" value="0" class="button"  onclick="displayValue(value)">
+				<td class="td"><input type="button" value="." class="button"  onclick="displayValue(value)">
+				<td class="td"><input type="button" value="C" class="cancel"  onclick="clr()">
+				<td class="td"><input type="button" value="=" id="button2">
+			</tr>
+		</table>
+		</form>
+	</body>
+</html>
